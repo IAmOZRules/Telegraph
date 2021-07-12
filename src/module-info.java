@@ -1,4 +1,4 @@
-module FirstJavaFX {
+module Telegraph {
     requires javafx.fxml;
     requires javafx.controls;
     requires javafx.graphics;
