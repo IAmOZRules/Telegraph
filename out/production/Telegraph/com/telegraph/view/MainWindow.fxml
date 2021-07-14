@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="516.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.telegraph.controller.MainWindowController">
+<AnchorPane prefHeight="516.0" prefWidth="928.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
    <children>
       <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="928.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
@@ -21,7 +21,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#optionsAction" text="Options" />
+              <MenuItem mnemonicParsing="false" onAction="#optionsAction" text="Settings" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">

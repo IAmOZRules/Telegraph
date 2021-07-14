@@ -10,7 +10,7 @@ public class Launcher extends Application {
     }
 
     @Override
-    public void start(Stage stage){
+    public void start(Stage stage) {
         ViewFactory viewFactory = new ViewFactory(new EmailManager());
         viewFactory.showLoginWindow();
     }

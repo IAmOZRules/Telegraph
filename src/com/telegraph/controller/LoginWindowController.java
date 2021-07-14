@@ -7,9 +7,9 @@ import javafx.scene.control.PasswordField;
 
 import com.telegraph.EmailManager;
 import com.telegraph.view.ViewFactory;
+import javafx.stage.Stage;
 
 public class LoginWindowController extends BaseController {
-
 
     @FXML
     private PasswordField passwordField;
@@ -22,7 +22,9 @@ public class LoginWindowController extends BaseController {
 
     @FXML
     void loginButtonAction() {
-        System.out.println("Login Button is the CLick");
+        Stage stage = (Stage) errorLabel.getScene().getWindow();
+        viewFactory.closeStage(stage);
+        viewFactory.showMainWindow();
     }
 
     public LoginWindowController(EmailManager emailManager, ViewFactory viewFactory, String fxmlName) {

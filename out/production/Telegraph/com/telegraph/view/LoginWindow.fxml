@@ -9,39 +9,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="292.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.telegraph.controller.LoginWindowController">
-   <children>
-      <PasswordField fx:id="passwordField" layoutX="181.0" layoutY="146.0" prefHeight="26.0" prefWidth="347.0" />
-      <Button layoutX="433.0" layoutY="227.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="35.0" prefWidth="94.0" text="Login">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Button>
-      <TextField fx:id="emailAddressField" layoutX="181.0" layoutY="90.0" prefHeight="26.0" prefWidth="347.0">
-         <cursor>
-            <Cursor fx:constant="TEXT" />
-         </cursor>
-      </TextField>
-      <Label layoutX="71.0" layoutY="90.0" prefHeight="26.0" prefWidth="94.0" text="Email Address">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="72.0" layoutY="146.0" prefHeight="26.0" prefWidth="94.0" text="Password">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Label>
-      <Separator layoutX="45.0" layoutY="198.0" prefHeight="0.0" prefWidth="509.0" />
-      <Label layoutX="261.0" layoutY="14.0" prefHeight="58.0" prefWidth="78.0" text="LOGIN" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
-         <font>
-            <Font name="System Bold" size="25.0" />
-         </font>
-      </Label>
-      <Label fx:id="errorLabel" contentDisplay="CENTER" layoutX="72.0" layoutY="227.0" prefHeight="35.0" prefWidth="338.0" text="Error" textFill="RED">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
-   </children>
+<AnchorPane prefHeight="292.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <TextField fx:id="emailAddressField" layoutX="181.0" layoutY="90.0" prefHeight="26.0" prefWidth="347.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <PasswordField fx:id="passwordField" layoutX="181.0" layoutY="146.0" prefHeight="26.0" prefWidth="347.0" />
+        <Button layoutX="433.0" layoutY="227.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="35.0" prefWidth="94.0" text="Login">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="71.0" layoutY="90.0" prefHeight="26.0" prefWidth="94.0" text="Email Address">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="72.0" layoutY="146.0" prefHeight="26.0" prefWidth="94.0" text="Password">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Separator layoutX="45.0" layoutY="198.0" prefHeight="0.0" prefWidth="509.0" />
+        <Label layoutX="261.0" layoutY="14.0" prefHeight="58.0" prefWidth="78.0" text="LOGIN" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="errorLabel" contentDisplay="CENTER" layoutX="72.0" layoutY="227.0" prefHeight="35.0" prefWidth="338.0" text="Error" textFill="RED">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
 </AnchorPane>
